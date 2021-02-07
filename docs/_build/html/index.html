@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PIXELLIB’S OFFICIAL DOCUMENTATION &mdash; PixelLib 0.4.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Semantic segmentation of images with PixelLib using Ade20k model" href="image_ade20k.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> PixelLib
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="image_ade20k.html"><strong>Semantic segmentation of images with PixelLib using Ade20k model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_ade20k.html"><strong>Semantic segmentation of videos with PixelLib using Ade20k model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_ade20k.html#segmentation-of-live-camera-with-ade20k-model"><strong>Segmentation of live camera with Ade20k model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image_pascal.html"><strong>Semantic segmentation of images with PixelLib using Pascalvoc model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_pascal.html"><strong>Semantic Segmentation of videos with PixelLib using Pascalvoc model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_pascal.html#segmentation-of-live-camera-with-pascalvoc-model"><strong>Segmentation of live camera with pascalvoc model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image_instance.html"><strong>Instance segmentation of images with PixelLib</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_instance.html"><strong>Instance segmentation of videos with PixelLib</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_instance.html#instance-segmentation-of-live-camera-with-mask-r-cnn"><strong>Instance Segmentation of Live Camera with Mask R-cnn.</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_train.html"><strong>Custom Training With PixelLib</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_inference.html"><strong>Inference With A Custom Model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_image_bg.html">Image Tuning With PixelLib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_video_bg.html">Change the Background of A Video</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">PixelLib</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>PIXELLIB’S OFFICIAL DOCUMENTATION</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pixellib-s-official-documentation">
+<h1>PIXELLIB’S OFFICIAL DOCUMENTATION<a class="headerlink" href="#pixellib-s-official-documentation" title="Permalink to this headline">¶</a></h1>
+<p>PixelLib is a library created for performing image and video segmentation using few lines of code. It is a flexible library created to allow easy integration of image and video segmentation into software solutions.</p>
+<p>PixelLib requires python’s version 3.5-3.7, <a class="reference external" href="https://www.python.org/downloads/">Download python</a></p>
+<p>It requires pip’s version &gt;= 19.0</p>
+<p>Install pip with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">pip</span>
+</pre></div>
+</div>
+<p>Install PixelLib and its dependencies:</p>
+<p>Install  the latest version of tensorflow(Tensorflow 2.0+) with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tensorflow</span>
+</pre></div>
+</div>
+<p>Install imgaug with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">imgaug</span>
+</pre></div>
+</div>
+<p>Install PixelLib with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">pixellib</span> <span class="o">--</span><span class="n">upgrade</span>
+</pre></div>
+</div>
+<p>PixelLib supports the two major types of segmentation and you can create a custom model for objects’ segmentation by training your dataset with PixelLib:</p>
+<p>1 <strong>Semantic segmentation</strong>:
+Objects in an image with the same pixel values are segmented with the same colormaps.</p>
+<img alt="_images/ade_overlay.jpg" src="_images/ade_overlay.jpg" />
+<p><a class="reference internal" href="image_ade20k.html#semantic-ade20k"><span class="std std-ref">Semantic segmentation of images with PixelLib using Ade20k model</span></a></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/hxczTe9U8jY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+https://www.youtube.com/watch?v=_NsELe67UxM
+</div><p><a class="reference internal" href="video_ade20k.html#video-ade20k"><span class="std std-ref">Semantic segmentation of videos with PixelLib using Ade20k model</span></a></p>
+<img alt="_images/pascal.jpg" src="_images/pascal.jpg" />
+<p><a class="reference internal" href="Image_pascal.html#image-pascal"><span class="std std-ref">Semantic segmentation of images with PixelLib using Pascalvoc model</span></a></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/l9WMqT2znJE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+https://www.youtube.com/watch?v=_NsELe67UxM
+</div><p><a class="reference internal" href="video_pascal.html#video-pascal"><span class="std std-ref">Semantic Segmentation of videos with PixelLib using Pascalvoc model</span></a></p>
+<p>2 <strong>Instance segmentation</strong>:
+Instances of the same object are segmented with different color maps.</p>
+<img alt="_images/ins.jpg" src="_images/ins.jpg" />
+<p><a class="reference internal" href="Image_instance.html#image-instance"><span class="std std-ref">Instance segmentation of images with PixelLib</span></a></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/bGPO1bCZLAo" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+
+</div><p><a class="reference internal" href="video_instance.html#video-instance"><span class="std std-ref">Instance segmentation of videos with PixelLib</span></a></p>
+<p>3 <strong>Implement Instance Segmentation And Object Detection On Objects By Training Your Dataset..</strong></p>
+<img alt="_images/cover.jpg" src="_images/cover.jpg" />
+<p><a class="reference internal" href="custom_train.html#custom-train"><span class="std std-ref">Custom Training With PixelLib</span></a></p>
+<p><strong>Inference With A Custom Model Trained With PixelLib</strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/bWQGxaZIPOo" ,  frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+https://www.youtube.com/watch?v=bWQGxaZIPOo
+</div><p><a class="reference internal" href="custom_inference.html#custom-inference"><span class="std std-ref">Inference With A Custom Model</span></a></p>
+<p><strong>Implement background editing in images and videos using five lines of code. These are the features supported for background editing.</strong></p>
+<p><strong>Change the background of an image with a picture</strong></p>
+<p><strong>Assign a distinct color to the background of an image</strong></p>
+<p><strong>Grayscale the background of an image</strong></p>
+<p><strong>Blur the background of an image</strong></p>
+<p><strong>Change the background of an Image</strong></p>
+<img alt="_images/bg_cover.jpg" src="_images/bg_cover.jpg" />
+<p><a class="reference internal" href="change_image_bg.html#image-bg"><span class="std std-ref">Image Tuning With PixelLib</span></a></p>
+<p><strong>Change the background of a Video</strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src= "https://www.youtube.com/embed/duTiKf76ZU8", frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><p><a class="reference internal" href="change_video_bg.html#video-bg"><span class="std std-ref">Change the Background of A Video</span></a></p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="image_ade20k.html"><strong>Semantic segmentation of images with PixelLib using Ade20k model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_ade20k.html"><strong>Semantic segmentation of videos with PixelLib using Ade20k model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_ade20k.html#segmentation-of-live-camera-with-ade20k-model"><strong>Segmentation of live camera with Ade20k model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image_pascal.html"><strong>Semantic segmentation of images with PixelLib using Pascalvoc model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_pascal.html"><strong>Semantic Segmentation of videos with PixelLib using Pascalvoc model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_pascal.html#segmentation-of-live-camera-with-pascalvoc-model"><strong>Segmentation of live camera with pascalvoc model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image_instance.html"><strong>Instance segmentation of images with PixelLib</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_instance.html"><strong>Instance segmentation of videos with PixelLib</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_instance.html#instance-segmentation-of-live-camera-with-mask-r-cnn"><strong>Instance Segmentation of Live Camera with Mask R-cnn.</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_train.html"><strong>Custom Training With PixelLib</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_inference.html"><strong>Inference With A Custom Model</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_image_bg.html">Image Tuning With PixelLib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_video_bg.html">Change the Background of A Video</a></li>
+</ul>
+</div>
+<p><em>CONTACT INFO:</em></p>
+<p><a class="reference external" href="https://mail.google.com/mail/u/0/#inbox">olafenwaayoola&#64;gmail.com</a></p>
+<p><a class="reference external" href="https://github.com/ayoolaolafenwa">Github.com</a></p>
+<p><a class="reference external" href="https://twitter.com/AyoolaOlafenwa">Twitter.com</a></p>
+<p><a class="reference external" href="https://web.facebook.com/ayofen?ref=bookmarks">Facebook.com</a></p>
+<p><a class="reference external" href="https://www.linkedin.com/in/ayoola-olafenwa-003b901a9/">Linkedin.com</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="image_ade20k.html" class="btn btn-neutral float-right" title="Semantic segmentation of images with PixelLib using Ade20k model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Ayoola Olafenwa
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
