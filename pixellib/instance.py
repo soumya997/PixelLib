@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import pandas as pd
 import random
 import os
 import sys
@@ -854,13 +855,26 @@ def apply_mask(image, mask, color, alpha=0.5):
                                   image[:, :, c])
     return image
 
+def color_class(class_ids):
+    color_range = [(0.8705, 0.3568, 0.3568),( 0.2235, 0.4, 0.9803),(0.4704, 0.8588, 0.3529)]
+    color_list = []
     
-import pandas as pd
+    for i in class_ids:
+        if i==1:
+            color_list.append(color_range[0])
+        elif i==2:
+            color_list.append(color_range[1])
+        else:
+            color_list.append(color_range[2])
+    print("done here :D")
+    return color_list
+
+
 
 def display_instances(image, boxes, masks, class_ids,  class_name):
     
     n_instances = boxes.shape[0]
-    colors = random_colors(n_instances)
+    colors = color_class(class_ids)
 
     
     assert boxes.shape[0] == masks.shape[-1] == class_ids.shape[0]
