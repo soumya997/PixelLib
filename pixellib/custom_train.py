@@ -109,11 +109,10 @@ class instance_custom_training:
             self.model.train(self.dataset_train, self.dataset_test,models = path_trained_models,  epochs=num_epochs,layers=layers)
 
         else:
-            augmentation = imgaug.augmenters.Sometimes(0.5, [
-                    imgaug.augmenters.Fliplr(0.5),
-                    iaa.Flipud(0.5),
-                    imgaug.augmenters.GaussianBlur(sigma=(0.0, 5.0))
-                ])
+            augmentation = iaa.Sequential([iaa.OneOf([iaa.contrast.CLAHE(clip_limit=4.0, tile_grid_size_px=(8, 8)),
+                       iaa.contrast.GammaContrast(gamma=(0.7, 1.7)),
+                       iaa.color.MultiplyBrightness((-50,50))
+                       ]),iaa.Affine(rotate=(-180,180))], random_order=False)
     
 
             print('Train %d' % len(self.dataset_train.image_ids), "images")
