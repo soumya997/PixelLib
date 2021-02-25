@@ -845,7 +845,7 @@ def random_colors(N, bright=True):
     return colors
 
 
-def apply_mask(image, mask, color, alpha=0.5):
+def apply_mask(image, mask, color, alpha=1):
     """Apply the given mask to the image.
     """
     for c in range(3):
@@ -891,10 +891,10 @@ def display_instances(image, boxes, masks, class_ids,  class_name):
 
     
     assert boxes.shape[0] == masks.shape[-1] == class_ids.shape[0]
-
+    image = np.zeros_like(image,dtype = np.uint8)
     for i, color in enumerate(colors):
         mask = masks[:, :, i]
-
+        
         image = apply_mask(image, mask, color)
 
         df = pd.DataFrame(mask)
