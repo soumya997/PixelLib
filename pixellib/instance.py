@@ -845,7 +845,7 @@ def random_colors(N, bright=True):
     return colors
 
 
-def apply_mask(image, mask, color, alpha=1):
+def apply_mask(image, mask, color, alpha=0.5):
     """Apply the given mask to the image.
     """
     for c in range(3):
@@ -868,30 +868,31 @@ def color_class(class_ids):
             color_list.append(color_range[2])
     print("done here :D")
     return color_list
-def color_class_gray(class_ids):
-    color_range = [(1/255,1/255,1/255),(2/255,2/255,2/255),(3/255,3/255,3/255)]
-    color_list = []
+
+# def color_class_gray(class_ids):
+#     color_range = [(1/255,1/255,1/255),(2/255,2/255,2/255),(3/255,3/255,3/255)]
+#     color_list = []
     
-    for i in class_ids:
-        if i==1:
-            color_list.append(color_range[0])
-        elif i==2:
-            color_list.append(color_range[1])
-        else:
-            color_list.append(color_range[2])
-    print("done here :D")
-    return color_list
+#     for i in class_ids:
+#         if i==1:
+#             color_list.append(color_range[0])
+#         elif i==2:
+#             color_list.append(color_range[1])
+#         else:
+#             color_list.append(color_range[2])
+#     print("done here :D")
+#     return color_list
     
 
 
 def display_instances(image, boxes, masks, class_ids,  class_name):
     
     n_instances = boxes.shape[0]
-    colors = color_class_gray(class_ids)
+    colors = color_class(class_ids)
 
     
     assert boxes.shape[0] == masks.shape[-1] == class_ids.shape[0]
-    image = np.zeros_like(image,dtype = np.uint8)
+#     image = np.zeros_like(image,dtype = np.uint8)
     for i, color in enumerate(colors):
         mask = masks[:, :, i]
         
