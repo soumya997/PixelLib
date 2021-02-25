@@ -868,13 +868,26 @@ def color_class(class_ids):
             color_list.append(color_range[2])
     print("done here :D")
     return color_list
-
+def color_class_gray(class_ids):
+    color_range = [(1/255,1/255,1/255),(2/255,2/255,2/255),(3/255,3/255,3/255)]
+    color_list = []
+    
+    for i in class_ids:
+        if i==1:
+            color_list.append(color_range[0])
+        elif i==2:
+            color_list.append(color_range[1])
+        else:
+            color_list.append(color_range[2])
+    print("done here :D")
+    return color_list
+    
 
 
 def display_instances(image, boxes, masks, class_ids,  class_name):
     
     n_instances = boxes.shape[0]
-    colors = color_class(class_ids)
+    colors = color_class_gray(class_ids)
 
     
     assert boxes.shape[0] == masks.shape[-1] == class_ids.shape[0]
